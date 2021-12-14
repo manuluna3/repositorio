@@ -4,8 +4,88 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    height: 200vh;
+    background-image: radial-gradient(red, yellow, green, blue, violet);
 }
 h1{
-    color: blue;
+    color: aquamarine;
+    background-image: linear-gradient(to right, red, green, blue);
+    line-height: 50px;
+    text-align: center;
+}
+#fight{
+    display: grid;
+    grid-template-areas: 
+        "hulk vs flash"
+    ;
+}
+#hulk{
+    grid-area: hulk;
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(255,224,189);
+    text-align: center;
+    border: black 5px solid;
+    border-radius: 50px;
+    margin: 100px;
+}
+#hulk{
+    transition: all 2s;
+}
+#hulk:hover{
+    height: 100px;
+    transform: scale(2);
+    background-color: green;
+    text-transform: uppercase;
+}
+#vs{
+    z-index: -2;
+    grid-area: vs;
+    color: aqua;
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+#flash p{
+    font-size: 40px;
+}
+#flash{
+    grid-area: flash;
+    float: right;
+    background-color: red;
+    color: yellow;
+    height: 60px;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    border: yellow 5px solid;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+#flash{
+    transition: all 0.2s;
+}
+#flash:hover{
+    transform:translate(-650px);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.hulk{
+    float: left;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 550px;
+}
+.flash{
+    color: black;
+    font-size: 20px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 550px;
 }
